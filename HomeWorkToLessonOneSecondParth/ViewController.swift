@@ -9,11 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var grennLightLabel: UIImageView!
+    @IBOutlet var yellowLightLabel: UIImageView!
+    @IBOutlet var redLightLabel: UIImageView!
+    
+    @IBOutlet var buttonLabel: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func buttonLightAction() {
+    }
+    
 }
 

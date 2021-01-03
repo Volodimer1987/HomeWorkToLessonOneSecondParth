@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var grennLightLabel: UIImageView!
+    @IBOutlet var greenLightLabel: UIImageView!
     @IBOutlet var yellowLightLabel: UIImageView!
     @IBOutlet var redLightLabel: UIImageView!
     
@@ -17,10 +17,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+       buttonLabel.setTitle("START", for: .normal)
+       adjustingLightsAndMakeTheyRound()
+        
+    }
+    
+    private func adjustingLightsAndMakeTheyRound() {
+        greenLightLabel.layer.cornerRadius = 50
+        yellowLightLabel.layer.cornerRadius = 50
+        redLightLabel.layer.cornerRadius = 50
+        
     }
 
     @IBAction func buttonLightAction() {
+        
     }
     
 }
